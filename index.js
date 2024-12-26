@@ -466,21 +466,24 @@ const cars = [
       ]
 
 
-      const carsGrid = document.getElementById('cars-grid');
-
-      cars.forEach(car => {
-          const carCard = document.createElement('div');
-          carCard.classList.add('car-card');
-      
-          carCard.innerHTML = `
-              <img src="${car.images[0] || 'https://via.placeholder.com/150'}" alt="${car.company} ${car.model}">
-              <h2>${car.company} ${car.model}</h2>
-              <p>${car.year}</p>
-              <ul>
-                  ${car.features.slice(0, 3).map(feature => `<li>• ${feature}</li>`).join('')}
-              </ul>
-              <p class="price">${car.price}</p>
-          `;
-      
-          carsGrid.appendChild(carCard);
-      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const carsGrid = document.getElementById('cars-grid');
+    
+        cars.forEach(car => {
+            const carCard = document.createElement('div');
+            carCard.classList.add('car-card');
+        
+            carCard.innerHTML = `
+                <img src="${car.images[0] || 'https://via.placeholder.com/150'}" alt="${car.company} ${car.model}">
+                <h2>${car.company} ${car.model}</h2>
+                <p>${car.year}</p>
+                <ul>
+                    ${car.features.slice(0, 3).map(feature => `<li>• ${feature}</li>`).join('')}
+                </ul>
+                <p class="price">${car.price}</p>
+            `;
+        
+            carsGrid.appendChild(carCard);
+        });
+    });
+    
