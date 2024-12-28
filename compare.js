@@ -486,7 +486,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const car1Container = document.getElementById('car1-container');
     const car2Container = document.getElementById('car2-container');
     
-    // Car data
 
     // Maximum number of cars that can be compared
     const maxCars = 2;
@@ -522,7 +521,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <ul>
                 ${(car.negativeAspects || []).map(aspect => `<li>${aspect}</li>`).join('')}
             </ul>
-                </ul>
             <button class="remove-button" data-id="${car.id}">Remove</button>
         `;
         container.appendChild(carCard);
