@@ -1,5 +1,6 @@
 const cars = [
     {
+        id:1,
         company: "Toyota",
         model: "Corolla",
         year: 2023,
@@ -22,6 +23,7 @@ const cars = [
         price: "$22,645",
     },
     {
+        id:2,
         company: "Ford",
         model: "Mustang GT",
         year: 2022,
@@ -44,6 +46,7 @@ const cars = [
         price: "$39,440",
     },
     {
+        id:3,
         company: "Toyota",
         model: "Corolla",
         year: 2023,
@@ -66,6 +69,7 @@ const cars = [
         price: "$22,645",
     },
  {
+    id:4,
     company: "Nissan",
     model: "Sunny",
     year: 2023,
@@ -101,6 +105,7 @@ const cars = [
     price: "$17,950",
 },
 {
+    id:5,
     company: "Nissan",
     model: "Rogue",
     year: 2022,
@@ -131,6 +136,7 @@ const cars = [
     price: "$27,150"
   },
   { 
+    id:6,
       company: "Nissan",
       model: "Altima",
       year: 2023,
@@ -170,6 +176,7 @@ const cars = [
     price: "$25,630"
  },
  {
+    id:7,
     company: "Hyundai",
     model: "Tucson",
     years: 2019,
@@ -207,6 +214,7 @@ const cars = [
     price: "$23,350"
 },
 {
+    id:9,
     company: "Hyundai",
     model: "Palisade",
     year: "2020",
@@ -241,6 +249,7 @@ const cars = [
     price: "$31,975"
 },
 {
+    id:10,
     company: "BMW",
     model: "330i",
     year: "2022",
@@ -275,6 +284,7 @@ const cars = [
     price: "$45,130"
 },
 {
+    id:11,
     company: "BMW",
     model: "X5",
     year: "2021",
@@ -313,6 +323,7 @@ const cars = [
     price: "$59,400"
 },
 {
+    id:12,
     company: "Changan",
     model: "UNI-K",
     year: "2024",
@@ -349,6 +360,7 @@ const cars = [
     price: "$25,800"
 },
 {
+    id:13,
     company: "Kia",
     model: "Sorento",
     year: 2022,
@@ -391,6 +403,7 @@ const cars = [
     price: "Starting at $29,590"
 },
 {
+    id:14,
     company: "Jeep",
     model: "Compass",
     year: 2022,
@@ -427,6 +440,7 @@ const cars = [
     price: "Starting at $26,390"
 },
 {
+    id:15,
     company: "Tesla",
     model: "Model S Plaid",
     year: 2023,
@@ -466,24 +480,75 @@ const cars = [
       ]
 
 
-      document.addEventListener("DOMContentLoaded", () => {
+
+
+    document.addEventListener("DOMContentLoaded", () => {
         const carsGrid = document.getElementById('cars-grid');
+        const searchBox = document.getElementById('search-box');
+        const filterSelect = document.getElementById('filter-select');
     
-        cars.forEach(car => {
-            const carCard = document.createElement('div');
-            carCard.classList.add('car-card');
-        
-            carCard.innerHTML = `
-                <img src="${car.images[0] || 'https://via.placeholder.com/150'}" alt="${car.company} ${car.model}">
-                <h2>${car.company} ${car.model}</h2>
-                <p>${car.year}</p>
-                <ul>
-                    ${car.features.slice(0, 3).map(feature => `<li>• ${feature}</li>`).join('')}
-                </ul>
-                <p class="price">${car.price}</p>
-            `;
-        
-            carsGrid.appendChild(carCard);
+        const renderGrid = (filteredCars) => {
+            carsGrid.innerHTML = ''; // Clear the grid
+            filteredCars.forEach(car => {
+                const carCard = document.createElement('div');
+                carCard.classList.add('car-card');
+            
+                carCard.innerHTML = `
+                    <img src="${car.images[0] || 'https://via.placeholder.com/150'}" alt="${car.company} ${car.model}">
+                    <h2>${car.company} ${car.model}</h2>
+                    <p>${car.year}</p>
+                    <ul>
+                        ${car.features.slice(0, 3).map(feature => `<li>• ${feature}</li>`).join('')}
+                    </ul>
+                    <p class="price">${car.price}</p>
+                    <button onclick="showDetails(${car.id})">Show More</button>
+                `;
+            
+                carsGrid.appendChild(carCard);
+            });
+        };
+    
+        // Populate the select dropdown with company names
+        const populateFilterSelect = () => {
+            const companies = [...new Set(cars.map(car => car.company))];
+            companies.forEach(company => {
+                const option = document.createElement('option');
+                option.value = company;
+                option.textContent = company;
+                filterSelect.appendChild(option);
+            });
+        };
+    
+        // Filter by company
+        const filterByCompany = (company) => {
+            if (company === 'all') {
+                renderGrid(cars);
+            } else {
+                const filteredCars = cars.filter(car => car.company === company);
+                renderGrid(filteredCars);
+            }
+        };
+    
+        // Dynamic search functionality
+        searchBox.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredCars = cars.filter(car => car.model.toLowerCase().includes(searchTerm));
+            renderGrid(filteredCars);
         });
+    
+        // Handle filter select change
+        filterSelect.addEventListener('change', (e) => {
+            const selectedCompany = e.target.value;
+            filterByCompany(selectedCompany);
+        });
+    
+        // Show car details
+        window.showDetails = (carId) => {
+            window.location.href = `details.html?id=${carId}`;
+        };
+    
+        // Initial render
+        renderGrid(cars);
+        populateFilterSelect();
     });
     
