@@ -137,7 +137,7 @@ const cars = [
             "Bluetooth connectivity for wireless audio and calls",
 
         ],
-        NegativeAspects: [
+        negativeAspects: [
             "Limited Infotainment Screen Options",
             "Low ground clearance but it depends on Region",
             "Weak stability at high speeds.",
@@ -269,7 +269,7 @@ const cars = [
             "Available leather upholstery",
             "Dual-zone automatic climate control"
         ],
-        NegativeAspects: [
+        negativeAspects: [
             "Acceleration may not be as brisk as some competitors",
             "Interior design in lower trims may feel basic",
             "Limited off-road capabilities due to SUV design",
@@ -311,7 +311,7 @@ const cars = [
             "Available leather upholstery",
             "Wireless charging"
         ],
-        NegativeAspects: [
+        negativeAspects: [
             "Cargo space might not be as ample as some competitors",
             "Fuel efficiency could be better for an SUV of its size",
             "Higher trims can get quite expensive"
@@ -352,7 +352,7 @@ const cars = [
             "Premium Harman Kardon sound system",
             "Wireless charging"
         ],
-        NegativeAspects: [
+        negativeAspects: [
             "Rear seat space can feel cramped for taller passengers",
             "Trunk space is smaller compared to competitors",
             "Premium price for the performance and features"
@@ -397,7 +397,7 @@ const cars = [
             "Harman Kardon sound system",
             "Wireless charging"
         ],
-        NegativeAspects: [
+        negativeAspects: [
             "Higher starting price compared to some competitors",
             "Limited cargo space with the third-row seats up",
             "Not as nimble as some other luxury SUVs"
@@ -456,20 +456,14 @@ const cars = [
             "https://www.auto-data.net/images/f62/Kia-Sorento-IV.jpg",
         ],
         specifications: {
-            engine: {
-                "2.5L 4-Cylinder": {
-                    horsepower: 191,
-                },
-                "2.5L Turbocharged 4-Cylinder": {
-                    horsepower: 281,
-                }
-            },
+            engine: "2.5L 4-Cylinder with 191 horse power and 2.5L Turbocharged 4-Cylinder with 281 horse power",
             transmission: "8-speed automatic",
             fuelType: "Gasoline",
             fuelTankCapacity: "67 liters",
             drivetrain: "Front-Wheel Drive (FWD) or All-Wheel Drive (AWD)",
             seatingCapacity: 7,
             bodyType: "SUV",
+
         },
         features: [
             "Apple CarPlay and Android Auto",
