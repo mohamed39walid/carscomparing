@@ -5,7 +5,7 @@ const cars = [
         model: "Corolla",
         year: 2023,
         images: [
-            "https://di-enrollment-api.s3.amazonaws.com/toyota/models/2023/corolla/Colors/Ruby+Flare+Pearl.png",
+            "https://d3s8goeblmpptu.cloudfront.net/mrp/toyota/2023/corolla/2023-toyota-corolla_landing-2.jpg",
             "https://www.heraldnet.com/wp-content/uploads/2023/10/34232537_web1_M2-2023-Toyota-Corolla_interior.jpg",
         ],
         specifications: {
@@ -160,8 +160,13 @@ const cars = [
             transmission: "Continuously Variable Transmission (CVT)",
             horsepower: 201,
             fuelType: "Gasoline",
-            fuelTankCapacity: "54.88 Liters",
+            fuelTankCapacity: "54.88 liters",
             bodyType: "SUV",
+            seatingCapacity: 5,
+            dimensions: "Length: 4,648 mm, Width: 1,839 mm, Height: 1,689 mm",
+            drivetrain: "Front-Wheel Drive (FWD) or All-Wheel Drive (AWD)",
+            range: "Approximately 643 km (400 miles) on a full tank",
+            to60: "8.2 seconds"
         },
         features: [
             "Apple CarPlay and Android Auto",
@@ -169,6 +174,8 @@ const cars = [
             "Lane Departure Warning",
             "Backup Camera",
             "Stability Control",
+            "360-Degree Surround View Camera",
+            "ProPilot Assist (driver assistance technology)"
         ],
         negativeAspects: [
             "Performance may feel average compared to competitors",
@@ -178,13 +185,15 @@ const cars = [
         ],
         price: "$27,150"
     },
+
     {
         id: 5,
         company: "Nissan",
         model: "Altima",
         year: 2023,
         images: [
-            "https://di-sitebuilder-assets.s3.amazonaws.com/Nissan/MLP/Altima/2023/color-gun-metallic.png",
+            "https://wieck-nissanao-production.s3.us-west-1.amazonaws.com/releaseInlineImages/ab9a6a33a0aabc407edc219d3cbc1aee857e9421",
+            "https://www.motortrend.com/uploads/2023/03/2023-Nissan-Altima-2.5SL-AWD-015-front-three-quarter-in-motion.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7iDnRBaPI7-qwqHjfrWkLaFEV42vMLPQZXw&s",
         ],
         specifications: {
@@ -196,7 +205,12 @@ const cars = [
             },
             fuelType: "Gasoline",
             fuelTankCapacity: "61.32 liters",
-            bodyType: "Sedan"
+            bodyType: "Sedan",
+            seatingCapacity: 5,
+            dimensions: "Length: 4,900 mm, Width: 1,850 mm, Height: 1,445 mm",
+            drivetrain: "Front-Wheel Drive (FWD) or All-Wheel Drive (AWD)",
+            range: "Approximately 830 km (515 miles) on a full tank",
+            to60: "7.4 seconds"
         },
         features: [
             "Apple CarPlay and Android Auto integration",
@@ -219,6 +233,7 @@ const cars = [
         ],
         price: "$25,630"
     },
+
     {
         id: 6,
         company: "Hyundai",
@@ -239,6 +254,10 @@ const cars = [
             fuelTankCapacity: "62.1 Liters",
             drivetrain: "Front-Wheel Drive (FWD) or All-Wheel Drive (AWD)",
             bodyType: "SUV",
+            seatingCapacity: 5,
+            dimensions: "Length: 4,480 mm, Width: 1,850 mm, Height: 1,655 mm",
+            range: "Approximately 600 km (373 miles) on a full tank",
+            to60: "9.2 seconds"
         },
         features: [
             "Apple CarPlay and Android Auto",
@@ -258,6 +277,7 @@ const cars = [
         ],
         price: "$23,350"
     },
+
     {
         id: 7,
         company: "Hyundai",
@@ -275,6 +295,10 @@ const cars = [
             fuelTankCapacity: "71.2 Liters",
             drivetrain: "Front-Wheel Drive (FWD) or All-Wheel Drive (AWD)",
             bodyType: "SUV",
+            seatingCapacity: 8,
+            dimensions: "Length: 4,980 mm, Width: 1,970 mm, Height: 1,750 mm",
+            range: "Approximately 600 km (373 miles) on a full tank",
+            to60: "7.1 seconds"
         },
         features: [
             "Apple CarPlay and Android Auto",
@@ -294,6 +318,7 @@ const cars = [
         ],
         price: "$31,975"
     },
+
     {
         id: 8,
         company: "BMW",
@@ -311,6 +336,10 @@ const cars = [
             fuelTankCapacity: "59.1 Liters",
             drivetrain: "Rear-Wheel Drive (RWD) or All-Wheel Drive (AWD)",
             bodyType: "Sedan",
+            seatingCapacity: 5,
+            dimensions: "Length: 4,710 mm, Width: 1,830 mm, Height: 1,435 mm",
+            range: "Approximately 600 km (373 miles) on a full tank",
+            to60: "5.6 seconds"
         },
         features: [
             "Apple CarPlay and Android Auto",
@@ -330,6 +359,7 @@ const cars = [
         ],
         price: "$45,130"
     },
+
     {
         id: 9,
         company: "BMW",
@@ -350,6 +380,10 @@ const cars = [
             fuelTankCapacity: "82.9 Liters",
             drivetrain: "All-Wheel Drive (AWD)",
             bodyType: "SUV",
+            seatingCapacity: 5,
+            dimensions: "Length: 4,922 mm, Width: 2,004 mm, Height: 1,745 mm",
+            range: "Approximately 500 miles (804.6 km) on a full tank",
+            to60: "4.1 seconds"
         },
         features: [
             "Apple CarPlay and Android Auto",
@@ -370,6 +404,7 @@ const cars = [
         ],
         price: "$59,400"
     },
+
     {
         id: 10,
         company: "Changan",
