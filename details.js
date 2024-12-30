@@ -14,22 +14,11 @@ const cars = [
             horsepower: 169,
             torque: "151 lb-ft",
             fuelType: "Gasoline",
-            fuelEconomy: {
-                "city": "31 mpg",
-                "highway": "40 mpg"
-            },
             drivetrain: "Front-Wheel Drive (FWD)",
             seatingCapacity: 5,
             bodyType: "Sedan",
             to60: "8.2 seconds",
             topSpeed: "112 mph",
-            dimensions: {
-                length: "182.3 inches",
-                width: "70.1 inches",
-                height: "56.5 inches",
-                wheelbase: "106.3 inches",
-                cargoVolume: "13.1 cubic feet"
-            }
         },
         features: [
             "Toyota Safety Sense 3.0",
@@ -67,23 +56,11 @@ const cars = [
             "horsepower": 450,
             "torque": "410 lb-ft",
             "fuelType": "Gasoline",
-            "fuelEconomy": {
-                "city": "15 mpg",
-                "highway": "24 mpg"
-            },
             "drivetrain": "Rear-Wheel Drive (RWD)",
             "seatingCapacity": 4,
             "bodyType": "Coupe",
             "0to60": "Approximately 4.3 seconds",
             "topSpeed": "155 mph",
-            "dimensions": {
-                "length": "188.9 inches",
-                "width": "75.4 inches",
-                "height": "55.1 inches",
-                "wheelbase": "107.1 inches",
-                "curbWeight": "3,730 lbs",
-                "cargoVolume": "13.5 cubic feet"
-            }
         },
         "features": [
             "Selectable Drive Modes",
@@ -199,10 +176,7 @@ const cars = [
         specifications: {
             engine: "2.5-liter 4-cylinder or 2.0-liter turbocharged 4-cylinder (VC-Turbo™)",
             transmission: "Continuously Variable Transmission (CVT)",
-            horsepower: {
-                "2.5L Engine": 188,
-                "2.0L Turbo Engine": 236
-            },
+            horsepower: "2.5L Engine with 188 HP and 2.0L Turbo Engine with 236 HP",
             fuelType: "Gasoline",
             fuelTankCapacity: "61.32 liters",
             bodyType: "Sedan",
@@ -238,7 +212,7 @@ const cars = [
         id: 6,
         company: "Hyundai",
         model: "Tucson",
-        years: 2019,
+        year: 2019,
         images: [
             "https://img.sm360.ca/images/article/dilawri-group-of-companies/61936//11561557682567.PNG",
             "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/caradvice/private/d2ab4f8f24af1ca698577299fe5f43d4",
@@ -246,10 +220,7 @@ const cars = [
         specifications: {
             engine: "2.0L 4-cylinder or 2.4L 4-cylinder",
             transmission: "6-speed automatic",
-            horsepower: {
-                "2.0L Engine": 164,
-                "2.4L Engine": 181,
-            },
+            horsepower: "2.0L Engine with 164 HP and 2.4L Engine with 181 HP",
             fuelType: "Gasoline",
             fuelTankCapacity: "62.1 Liters",
             drivetrain: "Front-Wheel Drive (FWD) or All-Wheel Drive (AWD)",
@@ -325,7 +296,7 @@ const cars = [
         model: "330i",
         year: "2022",
         images: [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB04F4XiMB8vSEXYNK3yeX-iBoV4qXMTOmnQ&s",
+            "https://dealerimages.dealereprocess.com/image/upload/2622789",
             "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/5362bb58-47b8-4aa4-ba76-b0a6a5d1ce5e/62787838-f070-473f-b375-f5f81d530e13.png",
         ],
         specifications: {
@@ -372,10 +343,7 @@ const cars = [
         specifications: {
             engine: "3.0L I6 Turbo or 4.4L V8 Turbo",
             transmission: "8-speed automatic",
-            horsepower: {
-                "3.0L I6 Turbo": 375,
-                "4.4L V8 Turbo": 523
-            },
+            horsepower: "3.0L I6 Turbo with 375 HP and 4.4L V8 Turbo 523 HP",
             fuelType: "Gasoline",
             fuelTankCapacity: "82.9 Liters",
             drivetrain: "All-Wheel Drive (AWD)",
@@ -578,25 +546,12 @@ const cars = [
             "torque": "564 lb-ft",
             "fuelType": "Electric",
             "range": "324 miles (521.4 km) on a single charge",
-            "chargingTime": {
-                "DC Fast Charging": "Up to 90 miles of range with 10 minutes of charging"
-            },
+            "chargingTime": "DC Fast Charging: Up to 90 miles of range with 10 minutes of charging",
             "drivetrain": "All-Wheel Drive (AWD)",
             "seatingCapacity": 5,
             "bodyType": "SUV",
             "0to60": "4.0 seconds",
             "topSpeed": "200 kmh",
-            "dimensions": {
-                "length": "4953 mm",
-                "width": "1967 mm",
-                "height": "1696 mm",
-                "wheelbase": "3000 mm",
-                "curbWeight": "2585 kg",
-                "cargoVolume": {
-                    "minimum": "500 liters",
-                    "maximum": "1750 liters"
-                }
-            }
         },
         "features": [
             "BMW Curved Display with configurable 12.3\" instrument cluster and 14.9\" central information display",
@@ -639,26 +594,12 @@ const cars = [
             "fuelType": "Electric",
             "range": "300 miles (482.8 km) on a single charge",
             "electricityConsumption": "21.2 kWh/100 km (34.12 kWh/100 mi)",
-            "chargingTime": {
-                "Level 1 (120V)": "Approximately 52 hours (5-80%)",
-                "Level 2 (220/240V)": "Approximately 6.8 hours (5-80%)",
-                "DC Fast Charging (440V)": "Approximately 30 minutes (5-80%)"
-            },
+            "chargingTime": "Level 1 (120V): Approximately 52 hours (5-80%), Level 2 (220/240V): Approximately 6.8 hours (5-80%),DC Fast Charging (440V): Approximately 30 minutes (5-80%)",
             "drivetrain": "All-Wheel Drive (AWD)",
             "seatingCapacity": 5,
             "bodyType": "SUV",
             "0to60": "3.4 seconds",
             "topSpeed": "200 km/h (124.27 mph)",
-            "dimensions": {
-                "length": "4886 mm (192.36 in.)",
-                "width": "1900 mm (74.8 in.)",
-                "curbWeight": "2571 kg (5668.08 lbs.)",
-                "grossWeight": "3039 kg (6699.85 lbs.)",
-                "trunkSpace": {
-                    "minimum": "866 liters (30.58 cu. ft.)",
-                    "maximum": "1727 liters (60.99 cu. ft.)"
-                }
-            }
         },
         "features": [
             "Heated and ventilated 16-way power adjustable front seats with massage function",
@@ -686,7 +627,7 @@ const cars = [
         "model": "Ariya Performance",
         "year": 2021,
         "images": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyupnVKPwQYr_BxbPvPHFqtKFb9R9yao5Agg&s",
+            "https://www-asia.nissan-cdn.net/content/dam/Nissan/global/vehicles/preorder/Modal/Performance/2022-ariya-drive-mode-jprhd-arypl010-2d.jpg.ximg.l_12_m.smart.jpg",
             "https://www.stevenscreeknissan.com/blogs/2920/wp-content/uploads/2024/04/24-nissan-ariya-san-jose-ca.png",
             "https://www.motortrend.com/uploads/2021/11/2022-Nissan-Ariya-09.jpg?w=768&width=768&q=75&format=webp",
             "https://topelectricsuv.com/wp-content/uploads/2023/12/Nissan-Ariya-Platinum-e-4orce-interior.jpg",
@@ -698,22 +639,12 @@ const cars = [
             "torque": "600 Nm (442.54 lb-ft)",
             "fuelType": "Electric",
             "range": "399 km (247.93 miles) on a single charge",
-            "chargingTime": {
-                "DC Fast Charging": "Up to 130 kW"
-            },
+            "chargingTime": "DC Fast Charging: Up to 130 kW",
             "drivetrain": "e-4ORCE All-Wheel Drive (AWD)",
             "seatingCapacity": 5,
             "bodyType": "Coupe SUV",
             "0to100": "5.1 seconds",
             "topSpeed": "200 km/h (124.27 mph)",
-            "dimensions": {
-                "length": "4595 mm (180.91 in.)",
-                "width": "1850 mm (72.83 in.)",
-                "height": "1655 mm (65.16 in.)",
-                "wheelbase": "2775 mm (109.25 in.)",
-                "curbWeight": "Approximately 1920 kg (4232 lbs)",
-                "cargoVolume": "408 liters (14.41 cu. ft.)"
-            }
         },
         "features": [
             "Advanced driver-assistance systems",
@@ -749,11 +680,7 @@ const cars = [
             "battery": "77.4 kWh Lithium-ion polymer",
             "usableCapacity": "74.0 kWh",
             "architecture": "800 V",
-            "chargingTime": {
-                "120V": "30.8 hours",
-                "240V": "8.5 hours",
-                "400V": "0.3 hours"
-            },
+            "chargingTime": "120V: 30.8 hours, 240V: 8.5 hours, 400V: 0.3 hours",
             "range": "282 miles (453.8 km) (EPA estimated)",
             "horsepower": 320,
             "torque": "446 lb-ft",
@@ -763,12 +690,6 @@ const cars = [
             "topSpeed": "115 mph (185 kmh)",
             "seatingCapacity": 5,
             "cargoCapacity": "24.4 cubic feet",
-            "dimensions": {
-                "length": "184.3 inches",
-                "width": "74.4 inches",
-                "height": "60.8 inches",
-                "wheelbase": "114.2 inches"
-            }
         },
         "features": [
             "Dual Motor e-AWD",
